@@ -10,7 +10,7 @@ namespace D2_Serializacja
 {
     internal class BinarySerializer
     {
-        public static void Create(Employee emp)
+        public static void Create(EmployeeSoap emp)
         {
             using (FileStream fs = new FileStream("dump.bin", FileMode.Create))
             {
@@ -21,7 +21,7 @@ namespace D2_Serializacja
             using (FileStream fs = new FileStream("dump.bin", FileMode.Open))
             {
                 BinaryFormatter bf   = new BinaryFormatter();
-                Employee empDeserial = bf.Deserialize(fs) as Employee;
+                EmployeeSoap empDeserial = bf.Deserialize(fs) as EmployeeSoap;
                 if (empDeserial != null)
                 {
                     Console.WriteLine(empDeserial);

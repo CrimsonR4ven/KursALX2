@@ -11,26 +11,27 @@ namespace D2_Serializacja
 {
     internal class SoapSerializer
     {
-        public static void Create(Employee emp)
+        public static void Create(EmployeeSoap emp)
         {
-            Employee[] empArray = new Employee[]
+            EmployeeSoap[] empArray = new EmployeeSoap[]
             {
                 emp, emp, emp
             };
 
-            using (FileStream fs = new FileStream("dump.bin", FileMode.Create))
+            using (FileStream fs = new FileStream("dump.xml", FileMode.Create))
             {
                 SoapFormatter sf = new SoapFormatter();
                 sf.Serialize(fs, empArray);
             }
 
-            using (FileStream fs = new FileStream("dump.bin", FileMode.Open))
+            using (FileStream fs = new FileStream("dump.xml", FileMode.Open))
             {
                 SoapFormatter sf = new SoapFormatter();
-                Employee[] empArrayDeserial = sf.Deserialize(fs) as Employee[];
+                EmployeeSoap[] empArrayDeserial = sf.Deserialize(fs) as EmployeeSoap[];
                 if (empArrayDeserial != null)
                 {
-                    Console.WriteLine(empArrayDeserial.Length);
+                    foreach(var em in empArrayDeserial)
+                        Console.WriteLine(em);
                 }
             }
         }
