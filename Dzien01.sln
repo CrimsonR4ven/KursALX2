@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_ThreadConsoleExample", "ThreadConsoleExample\D1_ThreadConsoleExample.csproj", "{E477FE7E-2729-4BCB-869D-28E5B9D68BE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_ThreadConsoleExample", "D1_ThreadConsoleExample\D1_ThreadConsoleExample.csproj", "{E477FE7E-2729-4BCB-869D-28E5B9D68BE1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OwnThings", "OwnThings\OwnThings.csproj", "{B0E7769B-05A0-4785-BBE8-E3D3A4CBEB6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_OwnThings", "DX_OwnThings\D1_OwnThings.csproj", "{B0E7769B-05A0-4785-BBE8-E3D3A4CBEB6C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_ThreadDelegate", "ThreadDelegate\D1_ThreadDelegate.csproj", "{B398E31D-75D5-4964-9F7E-2388F3A65850}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_ThreadDelegate", "D1_ThreadDelegate\D1_ThreadDelegate.csproj", "{B398E31D-75D5-4964-9F7E-2388F3A65850}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_ThreadSafeProblem", "ThreadSafeProblem\D1_ThreadSafeProblem.csproj", "{930D82AC-E51B-4D68-8F20-F3DF664B3538}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_ThreadSafeProblem", "D1_ThreadSafeProblem\D1_ThreadSafeProblem.csproj", "{930D82AC-E51B-4D68-8F20-F3DF664B3538}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_ThreadPoolTest", "ThreadPoolTest\D1_ThreadPoolTest.csproj", "{BA0C5687-732F-4F65-BC48-B868E2E3A2B8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_ThreadPoolTest", "D1_ThreadPoolTest\D1_ThreadPoolTest.csproj", "{BA0C5687-732F-4F65-BC48-B868E2E3A2B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_PararellTest", "PararellTest\D1_PararellTest.csproj", "{ECFDAC0D-CCD1-4467-BAAF-F1F6A2C833AE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_PararellTest", "D1_PararellTest\D1_PararellTest.csproj", "{ECFDAC0D-CCD1-4467-BAAF-F1F6A2C833AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_TaskExample", "TaskExample\D1_TaskExample.csproj", "{E17587E5-D0F1-4D4B-B599-9CF296145CEB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "D1_TaskExample", "D1_TaskExample\D1_TaskExample.csproj", "{E17587E5-D0F1-4D4B-B599-9CF296145CEB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dzien01 - Parallel,Threads,Tasks", "Dzien01 - Parallel,Threads,Tasks", "{F35FAA7C-7EA1-4CEB-94C8-298CBA7C5CC2}"
 EndProject

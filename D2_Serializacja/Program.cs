@@ -10,6 +10,8 @@ namespace D2_Serializacja
     {
         static void Main(string[] args)
         {
+            BinarySerializer.Create();
+            Console.ReadKey();
         }
     }
 }
