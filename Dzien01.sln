@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PararellTest", "PararellTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskExample", "TaskExample\TaskExample.csproj", "{E17587E5-D0F1-4D4B-B599-9CF296145CEB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dzien01 - Parallel,Threads,Tasks", "Dzien01 - Parallel,Threads,Tasks", "{F35FAA7C-7EA1-4CEB-94C8-298CBA7C5CC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -54,6 +56,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E477FE7E-2729-4BCB-869D-28E5B9D68BE1} = {F35FAA7C-7EA1-4CEB-94C8-298CBA7C5CC2}
+		{B398E31D-75D5-4964-9F7E-2388F3A65850} = {F35FAA7C-7EA1-4CEB-94C8-298CBA7C5CC2}
+		{930D82AC-E51B-4D68-8F20-F3DF664B3538} = {F35FAA7C-7EA1-4CEB-94C8-298CBA7C5CC2}
+		{BA0C5687-732F-4F65-BC48-B868E2E3A2B8} = {F35FAA7C-7EA1-4CEB-94C8-298CBA7C5CC2}
+		{ECFDAC0D-CCD1-4467-BAAF-F1F6A2C833AE} = {F35FAA7C-7EA1-4CEB-94C8-298CBA7C5CC2}
+		{E17587E5-D0F1-4D4B-B599-9CF296145CEB} = {F35FAA7C-7EA1-4CEB-94C8-298CBA7C5CC2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {688B653D-60E6-4BE2-AD08-1D85287FE70B}

@@ -9,10 +9,17 @@ namespace OwnThings
 {
     internal class Program
     {
+        static Random random = new Random();
         static void Main(string[] args)
         {
-            Thread thread1 = new Thread(() => Nonstop());
-            thread1.Start();
+            for (int i = 0; i < 3; i++)
+            {
+                Task.Run(() =>
+                {
+                    Nonstop();
+                });
+            }
+            Console.ReadKey();
         }
         static void Nonstop()
         {
@@ -20,19 +27,12 @@ namespace OwnThings
             while (true)
             {
                 Thread.Sleep(500);
+                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine($"#{threadId}: Urządzenie Pracuje");
-            }
-        }
-        static void Nons()
-        {
-            int threadId = Thread.CurrentThread.ManagedThreadId;
-            for (int i = 0; i < 10; i++)
-            {
-                Thread.Sleep(500);
-                Console.WriteLine($"{threadId} counter = {i}\n");
-                if (i == 5 && threadId == 4)
+                if(random.Next(1,10) == 1)
                 {
-                    Thread.CurrentThread.Abort();
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"#{threadId}: Urządzenie Zrobiło postęp");
                 }
             }
         }
