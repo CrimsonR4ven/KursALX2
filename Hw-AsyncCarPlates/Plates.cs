@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -37,10 +33,7 @@ namespace Hw_AsyncCarPlates
 				byte[] temp = wb.DownloadData("http://51.91.120.89/TABLICE/" + PlateFiles[i]);
 				DownloadedData += temp.Length;
 				Console.WriteLine($"{DownloadedData}B , {PlateFiles[i]}");
-				using (FileStream fs = new FileStream(PlateFiles[i].Split('.')[0] + ".jpg", FileMode.Create))
-				{
-					sf.WriteObject(fs, emp);
-				}
+				File.WriteAllBytes(PlateFiles[i].Split('.')[0] + ".jpg", temp);
 			});
 		}
 		public override string ToString()
