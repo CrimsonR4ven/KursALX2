@@ -23,6 +23,19 @@ namespace WpfTest
         public TextBlockExample()
         {
             InitializeComponent();
+            textBlockFormat.Inlines.Clear();
+            textBlockFormat.Inlines.Add("AAA ");
+            textBlockFormat.Inlines.Add(new Run("BBB")
+            { 
+                FontSize = 40, 
+                FontWeight = FontWeights.ExtraLight 
+            });
+            textBlockFormat.Inlines.Add(new Run("CCC")
+            {
+                FontSize = 60,
+                Foreground = Brushes.Tomato,
+                TextDecorations = TextDecorations.Strikethrough
+            });
         }
 
         private void Hyperlink_RequestNavigate(object sender, System.Windows.Navigation.RequestNavigateEventArgs e)

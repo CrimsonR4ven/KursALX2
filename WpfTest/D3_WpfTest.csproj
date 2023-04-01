@@ -55,13 +55,37 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ButtonCultureTest.xaml.cs">
+      <DependentUpon>ButtonCultureTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CheckBoxRadioTest.xaml.cs">
+      <DependentUpon>CheckBoxRadioTest.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LabelExample.xaml.cs">
+      <DependentUpon>LabelExample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TextBlockExample.xaml.cs">
       <DependentUpon>TextBlockExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TextBoxExample.xaml.cs">
+      <DependentUpon>TextBoxExample.xaml</DependentUpon>
     </Compile>
     <Compile Include="WpfResources.xaml.cs">
       <DependentUpon>WpfResources.xaml</DependentUpon>
     </Compile>
+    <Page Include="ButtonCultureTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ButtonTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CheckBoxRadioTest.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LabelExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -81,6 +105,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="TextBlockExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TextBoxExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -114,6 +142,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\HouseIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="HouseIcon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
