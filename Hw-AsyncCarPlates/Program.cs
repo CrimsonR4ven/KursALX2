@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace Hw_AsyncCarPlates
 {
@@ -12,7 +8,6 @@ namespace Hw_AsyncCarPlates
 		static void Main(string[] args)
 		{
 			Plates plates = new Plates();
-			WebClient wb = new WebClient();
 			plates.DownloadJpgsParallel();
 			Console.WriteLine(plates);
 			Console.ReadKey();

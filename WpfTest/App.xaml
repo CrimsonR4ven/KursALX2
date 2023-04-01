@@ -1,0 +1,10 @@
+﻿<Application x:Class="WpfTest.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:WpfTest"
+             DispatcherUnhandledException="Application_DispatcherUnhandledException"
+             StartupUri="TextBlockExample.xaml">
+    <Application.Resources>
+        <SolidColorBrush x:Key="DynamicColorBrush"/>
+    </Application.Resources>
+</Application>

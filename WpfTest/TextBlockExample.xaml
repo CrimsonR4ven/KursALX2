@@ -1,0 +1,27 @@
+﻿<Window x:Class="WpfTest.TextBlockExample"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfTest"
+        mc:Ignorable="d"
+        Title="TextBlockExample" Height="350" Width="600">
+    <StackPanel>
+        <TextBlock FontSize="20" Margin="10">
+            komunikat komunikat komunikat v komunikat
+            <LineBreak/> komunikat v komunikat komunikat komunikat
+        </TextBlock>
+        <TextBlock TextWrapping="Wrap" FontSize="20" Margin="10">
+            komunikat komunikat komunikat v komunikat komunikat v komunikat komunikat komunikat
+        </TextBlock>
+        <TextBlock TextTrimming="CharacterEllipsis" FontSize="20" Margin="10">
+            komunikat komunikat komunikat v komunikat komunikat v komunikat komunikat komunikat
+        </TextBlock>
+        <TextBlock FontSize="20" Margin="10">
+            <Bold>Komunikat taki gruby</Bold> <Italic>Komunikat ale pochylony</Italic> <Underline>Komunikat ale Podkreślony</Underline>
+        </TextBlock>
+        <TextBlock FontSize="20" Margin="10">
+            Link do <Hyperlink NavigateUri="http://alx.pl/" RequestNavigate="Hyperlink_RequestNavigate">Aeliks</Hyperlink>
+        </TextBlock>
+    </StackPanel>
+</Window>
