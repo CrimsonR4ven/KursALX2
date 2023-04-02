@@ -20,7 +20,7 @@ namespace D4_StockWatcher.Classes
     {
         public void Update(Stock data)
         {
-            if (data.Name.Equals("TSLA") && data.Name.Equals("IBM") && data.Price >= 20)
+            if ((data.Name.Equals("TSLA") || data.Name.Equals("IBM")) && data.Price >= 20)
             {
                 Console.WriteLine($"Akcje {data.Name} powyżej 20");
             }

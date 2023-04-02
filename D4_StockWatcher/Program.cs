@@ -27,6 +27,7 @@ namespace D4_StockWatcher
                 Console.WriteLine($"Generator danych: {item.Name}-{item.Price}");
                 observableStock.Subject = item;
             }
+            Console.ReadKey();
         }
     }
 }
