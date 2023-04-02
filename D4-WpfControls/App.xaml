@@ -1,0 +1,9 @@
+﻿<Application x:Class="D4_WpfControls.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:D4_WpfControls"
+             StartupUri="DataGridExample.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
