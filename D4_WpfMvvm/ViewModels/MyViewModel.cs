@@ -29,7 +29,7 @@ namespace D4_WpfMvvm.ViewModels
             get => user.LastName;
             set
             {
-                if (user.FirstName != value)
+                if (user.LastName != value)
                 {
                     user.LastName = value;
                     OnPropertyChanged(nameof(LastName));
